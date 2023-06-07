@@ -17,11 +17,12 @@ const Specefecations = () =>{
 
     return (
         <>
-        <Container>
+        <div id="specefecations"></div>
+        <Container >
             <Row>
               <Col className="ml-auto mr-auto text-center" md="8">
-                <h2 className="title">Specefecations</h2>
-                <h5 className="description">
+                <h2 className="title" style={{color:"#993314"}}>Specefecations</h2>
+                <h5 className="description" style={{fontWeight:"normal",color:"#000"}}>
                 The software system offers a range of essential features designed to meet the needs of modern businesses, including Microsoft SQL or Oracle based systems, an open platform, modularity, multi-user support, client/server architecture, bilingual support, multi-company, multi-branch, and multi-currency functionality, fully integrated systems, parameterization to enable authorized users to define and alter various types of parameters, user-friendly interface, advanced security tools to configure access rights, open platforms not tied to any specific software or hardware, support for hard copy reports, and user documentation to ensure smooth implementation and ongoing use. These features make the software system a comprehensive and reliable solution for businesses seeking to streamline their operations and improve their bottom line.
                 </h5>
               </Col>
@@ -34,7 +35,7 @@ const Specefecations = () =>{
                     className="image-container image-left"
                     style={{
                       backgroundImage:
-                        "url(" + require("assets/img/login.jpg") + ")"
+                        "url(" + require("assets/img/login1.jpg") + ")"
                     }}
                   >
                     {/* <p className="blockquote blockquote-info">
@@ -61,10 +62,10 @@ const Specefecations = () =>{
                         "url(" + require("assets/img/bg1.jpg") + ")"
                     }}
                   ></div>
-                  <h3>
+                  <h3 style={{color:"#5d9a24"}}>
                   Our software system offers a range of key features designed to meet the needs of modern businesses:
                   </h3>
-                  <ul>
+                  <ul style={{color:"#993314"}}>
                     <li>Microsoft SQL or Oracle Based Systems</li>
                     <li>Open Platform</li>
                     <li>Modularity - Multi-User</li>
@@ -80,13 +81,13 @@ const Specefecations = () =>{
                     <li>User's Guide Documentation</li>
 
                   </ul>
-                  <p>
+                  <p style={{color:"#000",fontWeight:"normal"}}>
                   Our fully-integrated system is highly parameterized, allowing authorized users to define and alter various types of parameters quickly and easily. Users will also appreciate the system's user-friendly interface, which is designed to be intuitive and easy to navigate.
                   </p>
-                  <p>
+                  <p style={{color:"#000",fontWeight:"normal"}}>
                   We take security seriously, and our system provides advanced tools to allow administrators to configure access rights to various parts of the system. Our system is built on an open platform, which means it is not tied to any specific software or hardware platforms, ensuring maximum flexibility and future-proofing.
                   </p>
-                  <p>
+                  <p style={{color:"#000",fontWeight:"normal"}}>
                   The system also supports hard copy reports and comes complete with user documentation to ensure smooth implementation and ongoing use. Overall, our software system is a comprehensive and reliable solution for businesses looking to streamline their operations and improve their bottom line.
                   </p>
                 </Col>

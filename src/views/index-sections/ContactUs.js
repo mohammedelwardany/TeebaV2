@@ -14,19 +14,37 @@ import {
 } from "reactstrap";
 
 const ContactUs = () =>{
-    const [firstFocus, setFirstFocus] = React.useState(false);
-    const [lastFocus, setLastFocus] = React.useState(false);
-
+    const [NameFocus, setNameFocus] = React.useState(false);
+    const [EmailFocus, setEmailFocus] = React.useState(false);
+    const [PhoneFocus, setPhoneFocus] = React.useState(false);
+    const [JobTitele, setJobTitele] = React.useState(false);
     return(
- <div className="section section-contact-us text-center">
+ <div className="section section-contact-us text-center" id="ContactUs">
 <Container>
-  <h2 className="title">Want to work with us?</h2>
-  <p className="description">Your project is very important to us.</p>
+  <h2 className="title" style={{color:"#993314"}}>Contact us</h2>
+  <p className="description" style={{fontWeight:"normal",color:"#000"}}>How Can We Help You?</p>
   <Row>
     <Col className="text-center ml-auto mr-auto" lg="6" md="8">
       <InputGroup
         className={
-          "input-lg" + (firstFocus ? " input-group-focus" : "")
+          "input-lg" + (JobTitele ? " input-group-focus" : "")
+        }
+      >
+        <InputGroupAddon addonType="prepend">
+          <InputGroupText>
+            <i className="now-ui-icons business_badge"></i>
+          </InputGroupText>
+        </InputGroupAddon>
+        <Input
+          placeholder="jobTitle..."
+          type="text"
+          onFocus={() => setJobTitele(true)}
+          onBlur={() => setJobTitele(false)}
+        ></Input>
+      </InputGroup>
+      <InputGroup
+        className={
+          "input-lg" + (NameFocus ? " input-group-focus" : "")
         }
       >
         <InputGroupAddon addonType="prepend">
@@ -35,15 +53,15 @@ const ContactUs = () =>{
           </InputGroupText>
         </InputGroupAddon>
         <Input
-          placeholder="First Name..."
+          placeholder="Name..."
           type="text"
-          onFocus={() => setFirstFocus(true)}
-          onBlur={() => setFirstFocus(false)}
+          onFocus={() => setNameFocus(true)}
+          onBlur={() => setNameFocus(false)}
         ></Input>
       </InputGroup>
       <InputGroup
         className={
-          "input-lg" + (lastFocus ? " input-group-focus" : "")
+          "input-lg" + (EmailFocus ? " input-group-focus" : "")
         }
       >
         <InputGroupAddon addonType="prepend">
@@ -54,8 +72,25 @@ const ContactUs = () =>{
         <Input
           placeholder="Email..."
           type="text"
-          onFocus={() => setLastFocus(true)}
-          onBlur={() => setLastFocus(false)}
+          onFocus={() => setEmailFocus(true)}
+          onBlur={() => setEmailFocus(false)}
+        ></Input>
+      </InputGroup>
+      <InputGroup
+        className={
+          "input-lg" + (PhoneFocus ? " input-group-focus" : "")
+        }
+      >
+        <InputGroupAddon addonType="prepend">
+          <InputGroupText>
+            <i className="now-ui-icons tech_mobile"></i>
+          </InputGroupText>
+        </InputGroupAddon>
+        <Input
+          placeholder="Phone..."
+          type="text"
+          onFocus={() => setPhoneFocus(true)}
+          onBlur={() => setPhoneFocus(false)}
         ></Input>
       </InputGroup>
       <div className="textarea-container">
@@ -70,6 +105,7 @@ const ContactUs = () =>{
       <div className="send-button">
         <Button
           block
+          style={{backgroundColor:"#993314"}}
           className="btn-round"
           color="info"
           href="#pablo"

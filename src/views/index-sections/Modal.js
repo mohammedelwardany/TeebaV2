@@ -25,7 +25,7 @@ const ModalC = ({ModalButton,Modaltitle,ModalImageSrc,ModalParagraph,ModalbtnV,M
         color="info"
         className="mr-1"
         onClick={() => setModal1(true)}
-        style={{display:ModalbtnV}}
+        style={{display:ModalbtnV,backgroundColor:"#5d9a24"}}
       >
         {ModalButton}
       </Button>
@@ -35,7 +35,7 @@ const ModalC = ({ModalButton,Modaltitle,ModalImageSrc,ModalParagraph,ModalbtnV,M
                 color="info"
                 size="lg"
                 target="_blank"
-                style={{display:ModalBtnV}}
+                style={{display:ModalBtnV,backgroundColor:"#993314"}}
                 onClick={() => setModal1(true)}
               >
                 {ModalButton}
@@ -68,9 +68,9 @@ const ModalC = ({ModalButton,Modaltitle,ModalImageSrc,ModalParagraph,ModalbtnV,M
                   </p>
                 </ModalBody>
                 <div className="modal-footer">
-                  <Button color="default" type="button">
-                    Nice Button
-                  </Button>
+                  <div>
+                    
+                  </div>
                   <Button
                     color="danger"
                     type="button"

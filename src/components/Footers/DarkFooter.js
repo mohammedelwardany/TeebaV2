@@ -1,57 +1,38 @@
-/*eslint-disable*/
 import React from "react";
 
-// reactstrap components
 import { Container } from "reactstrap";
 
 function DarkFooter() {
   return (
-    <footer className="footer" data-background-color="black">
+    <footer className="footer" data-background-color="black" style={{backgroundColor:"#000"}}>
       <Container>
-        <nav>
-          <ul>
-            <li>
-              <a
-                href="https://www.creative-tim.com?ref=nukr-dark-footer"
-                target="_blank"
-              >
-                Creative Tim
-              </a>
-            </li>
-            <li>
-              <a
-                href="http://presentation.creative-tim.com?ref=nukr-dark-footer"
-                target="_blank"
-              >
-                About Us
-              </a>
-            </li>
-            <li>
-              <a
-                href="http://blog.creative-tim.com?ref=nukr-dark-footer"
-                target="_blank"
-              >
-                Blog
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <div className="copyright" id="copyright">
-          © {new Date().getFullYear()}, Designed by{" "}
-          <a
-            href="https://www.invisionapp.com?ref=nukr-dark-footer"
-            target="_blank"
-          >
-            Invision
-          </a>
-          . Coded by{" "}
-          <a
-            href="https://www.creative-tim.com?ref=nukr-dark-footer"
-            target="_blank"
-          >
-            Creative Tim
-          </a>
+        <div style={{display:"flex" , flexDirection:"row" , justifyContent:"space-between"  , alignItems:"center"}}>
+        <div style={{display:"flex" , flexDirection:"column" , justifyContent:"space-between" }}>
+        <div className="m-2" >
+        <i class="now-ui-icons location_pin"></i>
+        &nbsp; &nbsp; &nbsp;
+        <span>9 Saudai Company Buildings,
+          Nozha street,
+          Cairo , Egypt</span>
+        </div>
+        <div className="m-2">
+        <i class="now-ui-icons ui-1_email-85"></i>
+        &nbsp; &nbsp; &nbsp;<span>teeba1@tedata.net.eg</span>
+        </div>
+        <div className="m-2">
+        <i class="now-ui-icons tech_mobile"></i>
+        &nbsp; &nbsp; &nbsp; <span>(202)4142191</span>
+        </div>
+        </div>
+
+
+        <div className="copyright" id="copyright" >
+          © {new Date().getFullYear()}, 
+          
+            BitZone
+          
           .
+        </div>
         </div>
       </Container>
     </footer>

@@ -52,7 +52,7 @@ function IndexNavbar() {
           }}
         />
       ) : null}
-      <Navbar className={"fixed-top " + navbarColor} expand="lg" color="info">
+      <Navbar className={"fixed-top " + navbarColor} expand="lg" style={{backgroundColor:"#5d9a24"}}>
         <Container>
           <div className="navbar-translate">
             <NavbarBrand
@@ -60,7 +60,7 @@ function IndexNavbar() {
               target="_blank"
               id="navbar-brand"
             >
-              <img src={logoImg} width={70}/>
+              <img src={logoImg} width={70} />
             </NavbarBrand>
 
             <button
@@ -83,7 +83,7 @@ function IndexNavbar() {
             navbar
           >
             <Nav navbar>
-              
+
               <UncontrolledDropdown nav>
                 <DropdownToggle
                   caret
@@ -96,16 +96,37 @@ function IndexNavbar() {
                   <p>services</p>
                 </DropdownToggle>
                 <DropdownMenu>
-                  <DropdownItem to="/index" tag={Link}>
-                  Applications Software Development
+                  <DropdownItem to=""
+                    onClick={(e) => {
+                      e.preventDefault();
+                      document
+                        .getElementById("services")
+                        .scrollIntoView();
+                    }}
+                    tag={Link}>
+                    Applications Software Development
                   </DropdownItem>
-                  <DropdownItem to="/index" tag={Link}>
-                  Technical Support
+                  <DropdownItem to=""
+                    onClick={(e) => {
+                      e.preventDefault();
+                      document
+                        .getElementById("services")
+                        .scrollIntoView();
+                    }}
+                    tag={Link}>
+                    Technical Support
                   </DropdownItem>
-                  <DropdownItem to="/index" tag={Link}>
-                  Training for the users
+                  <DropdownItem to=""
+                    onClick={(e) => {
+                      e.preventDefault();
+                      document
+                        .getElementById("services")
+                        .scrollIntoView();
+                    }}
+                    tag={Link}>
+                    Training for the users
                   </DropdownItem>
-                 
+
                   {/* <DropdownItem
                     href="https://demos.creative-tim.com/now-ui-kit-react/#/documentation/introduction?ref=nukr-index-navbar"
                     target="_blank"
@@ -127,25 +148,70 @@ function IndexNavbar() {
                   <p>products</p>
                 </DropdownToggle>
                 <DropdownMenu>
-                  <DropdownItem to="/index" tag={Link}>
+                  <DropdownItem to=""
+                    onClick={(e) => {
+                      e.preventDefault();
+                      document
+                        .getElementById("carousel")
+                        .scrollIntoView();
+                    }}
+
+                    tag={Link}>
                     Inventory Management
                   </DropdownItem>
-                  <DropdownItem to="/index" tag={Link}>
+                  <DropdownItem to=""
+                    onClick={(e) => {
+                      e.preventDefault();
+                      document
+                        .getElementById("carousel")
+                        .scrollIntoView();
+                    }}
+                    tag={Link}>
                     Sales & Customer Orders
                   </DropdownItem>
-                  <DropdownItem to="/index" tag={Link}>
+                  <DropdownItem to=""
+                    onClick={(e) => {
+                      e.preventDefault();
+                      document
+                        .getElementById("carousel")
+                        .scrollIntoView();
+                    }} tag={Link}>
                     Purchasing
                   </DropdownItem>
-                  <DropdownItem to="/index" tag={Link}>
+                  <DropdownItem to=""
+                    onClick={(e) => {
+                      e.preventDefault();
+                      document
+                        .getElementById("carousel")
+                        .scrollIntoView();
+                    }} tag={Link}>
                     General Ledger
                   </DropdownItem>
-                  <DropdownItem to="/index" tag={Link}>
+                  <DropdownItem to=""
+                    onClick={(e) => {
+                      e.preventDefault();
+                      document
+                        .getElementById("carousel")
+                        .scrollIntoView();
+                    }} tag={Link}>
                     Accounts Payable
                   </DropdownItem>
-                  <DropdownItem to="/index" tag={Link}>
+                  <DropdownItem to=""
+                    onClick={(e) => {
+                      e.preventDefault();
+                      document
+                        .getElementById("carousel")
+                        .scrollIntoView();
+                    }} tag={Link}>
                     Accounts Receivable
                   </DropdownItem>
-                  <DropdownItem to="/index" tag={Link}>
+                  <DropdownItem to=""
+                    onClick={(e) => {
+                      e.preventDefault();
+                      document
+                        .getElementById("carousel")
+                        .scrollIntoView();
+                    }} tag={Link}>
                     Payroll
                   </DropdownItem>
                   {/* <DropdownItem
@@ -163,7 +229,7 @@ function IndexNavbar() {
                   onClick={(e) => {
                     e.preventDefault();
                     document
-                      .getElementById("download-section")
+                      .getElementById("specefecations")
                       .scrollIntoView();
                   }}
                 >
@@ -173,11 +239,11 @@ function IndexNavbar() {
               </NavItem>
               <NavItem>
                 <NavLink
-                  href="#pablo"
+                  href="#specefecations"
                   onClick={(e) => {
                     e.preventDefault();
                     document
-                      .getElementById("download-section")
+                      .getElementById("specefecations")
                       .scrollIntoView();
                   }}
                 >
@@ -191,7 +257,7 @@ function IndexNavbar() {
                   onClick={(e) => {
                     e.preventDefault();
                     document
-                      .getElementById("download-section")
+                      .getElementById("aboutUs")
                       .scrollIntoView();
                   }}
                 >
@@ -202,10 +268,16 @@ function IndexNavbar() {
               <NavItem>
                 <Button
                   className="nav-link btn-neutral"
+                  style={{backgroundColor:"#fff",color:"#5d9a23"}}
                   color="info"
                   href=""
                   id="upgrade-to-pro"
-                  target="_blank"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    document
+                      .getElementById("ContactUs")
+                      .scrollIntoView();
+                  }}
                 >
                   {/* <i className="now-ui-icons arrows-1_share-66 mr-1"></i> */}
                   <p>Contact Us</p>

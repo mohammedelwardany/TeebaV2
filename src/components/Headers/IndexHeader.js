@@ -1,6 +1,6 @@
 /*eslint-disable*/
 import React from "react";
-
+import "./style.css"
 // reactstrap components
 import { Container } from "reactstrap";
 // core components
@@ -24,7 +24,7 @@ function IndexHeader({knowMore}) {
 
   return (
     <>
-      <div className="page-header clear-filter" filter-color="blue">
+      <div className="page-header clear-filter" filter-color="#000">
         <div
           className="page-header-image"
           style={{
@@ -36,7 +36,8 @@ function IndexHeader({knowMore}) {
           <div className="content-center brand">
             <img
               alt="..."
-              className="n-logo"
+              // className="n-logo logomainSize"
+              style={{width:"30%" , marginBottom:"3vh"}}
               src={require("assets/img/5144234w.png")}
             ></img>
             <h1 className="h1-seo">TEEBA SYSTEMS</h1>
@@ -44,7 +45,13 @@ function IndexHeader({knowMore}) {
           </div>
           <h6 className="category category-absolute">
             
-            <a href={knowMore} style={{color:"white"}} target="_blank">
+            <a style={{color:"white"}}      
+                    onClick={(e) => {
+                    e.preventDefault();
+                    document
+                      .getElementById("services")
+                      .scrollIntoView();
+                  }}>
             know more
            </a>
           </h6>

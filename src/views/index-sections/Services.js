@@ -20,9 +20,9 @@ function Services() {
     
     return (
     <>
-<div className="section section-team text-center">
+<div className="section section-team text-center" id="services">
 <Container>
-  <h2 className="title">Services</h2>
+  <h2 className="title" style={{color:"#993314"}}>Services</h2>
   <div className="team">
     <Row>
       <Col md="4">
@@ -33,7 +33,7 @@ function Services() {
             className="rounded-circle img-fluid img-raised"
             src={require("assets/img/avatar.jpg")}
           ></img>
-          <h4 className="title">Software Development</h4>
+          <h4 className="title" >Software Development</h4>
           <ModalC
           ModalButton={"Know More"}
           Modaltitle={"Applications Software Development"}

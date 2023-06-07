@@ -26,8 +26,9 @@ import Examples from "./index-sections/Examples.js";
 import Download from "./index-sections/Download.js";
 import Services from "./index-sections/Services.js";
 import { Specefecations } from "./index-sections/Specifecation.js";
-import  Products  from "./index-sections/Products.js";
+import  Products  from "./index-sections/Refrences.js";
 import ContactUs from "./index-sections/ContactUs.js";
+import Refrences from "./index-sections/Refrences.js";
 
 function Index() {
   React.useEffect(() => {
@@ -47,7 +48,7 @@ function Index() {
       <div className="wrapper">
         <IndexHeader />
         <div className="main">
-          <Images />
+          {/* <Images /> */}
          <Services/> 
 
 
@@ -56,25 +57,13 @@ function Index() {
 
 
         <Specefecations/>
-
+<Refrences/>
 
 <NucleoIcons />
 
 <ContactUs/>
 
-          <BasicElements />
-          <Navbars />
-          <Tabs />
-          <Pagination />
-          <Notifications />
-          <Typography />
-          <Javascript />
-          <Carousel />
           
-          <CompleteExamples />
-          <SignUp />
-          <Examples />
-          <Download />
         </div>
         <DarkFooter />
       </div>

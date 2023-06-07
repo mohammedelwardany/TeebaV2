@@ -8,11 +8,11 @@ import { ModalC } from "./Modal";
 function NucleoIcons() {
   return (
     <>
-      <div className="section section-nucleo-icons">
+      <div className="section section-nucleo-icons" id="aboutUs">
         <Container>
           <Row>
             <Col lg="6" md="12">
-              <h2 className="title">About Us</h2>
+              <h2 className="title" style={{color:"#993314"}}>About Us</h2>
               <h5 className="description">
               Teeba Data Systems Co was established in Egypt in 1991 as SOFTWARE HOUSE
               </h5>
@@ -38,8 +38,15 @@ function NucleoIcons() {
               <Button
                 className="btn-round"
                 color="info"
+                style={{borderColor:"#993314",color:"#993314",fontWeight:"bold"}}
                 href="#"
                 outline
+                onClick={(e) => {
+                  e.preventDefault();
+                  document
+                    .getElementById("ContactUs")
+                    .scrollIntoView();
+                }}
                 size="lg"
                 target="_blank"
               >
@@ -47,8 +54,8 @@ function NucleoIcons() {
               </Button>
             </Col>
             <Col lg="6" md="12">
-              <div className="icons-container">
-                <img src={require("../../assets/img/5144234.png")}></img>
+              <div className="icons-container" style={{display:"flex",alignItems:"center",justifyContent:"center"}}>
+                <img style={{width:"70%"}} src={require("../../assets/img/5144234.png")}></img>
               </div>
             </Col>
           </Row>
