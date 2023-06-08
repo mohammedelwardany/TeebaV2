@@ -15,9 +15,8 @@ import {
     PopoverHeader,
     UncontrolledPopover,
   } from "reactstrap";
-  
 
-const ModalC = ({ModalButton,Modaltitle,ModalImageSrc,ModalParagraph,ModalbtnV,ModalBtnV}) =>{
+const ModalC = ({ModalButton,Modaltitle,ModalImageSrc,ModalParagraph,ModalbtnV,ModalBtnV,imageeeee}) =>{
     const [modal1, setModal1] = React.useState(false);
     return (
         <>
@@ -59,9 +58,11 @@ const ModalC = ({ModalButton,Modaltitle,ModalImageSrc,ModalParagraph,ModalbtnV,M
                 <img
                   alt="..."
                   className="rounded"
-                  style={{maxWidth:300}}
+                  style={{maxWidth:200,marginBlock:"5vh"}}
                   src={ModalImageSrc}
+                  // src={logo}
                 ></img>
+                {/* {imageeeee} */}
                 </div>
                   <p>
                     {ModalParagraph}
