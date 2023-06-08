@@ -64,7 +64,7 @@ const ModalC = ({ModalButton,Modaltitle,ModalImageSrc,ModalParagraph,ModalbtnV,M
                 ></img>
                 {/* {imageeeee} */}
                 </div>
-                  <p>
+                  <p style={{fontWeight:"normal"}}>
                     {ModalParagraph}
                   </p>
                 </ModalBody>
