@@ -24,16 +24,16 @@ const ContactUs = () =>{
   <h2 className="title" style={{color:"#000"}}>Contact us</h2>
   <p className="description" style={{fontWeight:"normal",color:"#000",textAlign:"start"}}>Follow our LinkedIn profile for the latest updates, industry insights, and thought leadership articles on digital transformation and emerging technologies. Join Teeba Digital Transformation in shaping the future of digital innovation.</p>
   <br/> <br/>
-  <p className="description" style={{fontWeight:"normal",color:"#000",textAlign:"start"}}>
+  {/* <p className="description" style={{fontWeight:"normal",color:"#000",textAlign:"start"}}>
   Teeba Digital Transformation <br/>
 9 AL Nozha street , Nasr City , Cairo , Egypt <br/>
 Phone:  + (202) 4142191<br/>
 Email: info@teebasystems.com.eg<br/>
 
-  </p>
+  </p> */}
 
   
-  {/* <Row>
+  <Row>
     <Col className="text-center ml-auto mr-auto" lg="6" md="8">
       <InputGroup
         className={
@@ -115,7 +115,7 @@ Email: info@teebasystems.com.eg<br/>
       <div className="send-button">
         <Button
           block
-          style={{backgroundColor:"#993314"}}
+          style={{backgroundColor:"#000"}}
           className="btn-round"
           color="info"
           href="#pablo"
@@ -126,7 +126,7 @@ Email: info@teebasystems.com.eg<br/>
         </Button>
       </div>
     </Col>
-  </Row> */}
+  </Row>
 </Container>
 </div> 
     )

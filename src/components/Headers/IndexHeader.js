@@ -45,7 +45,7 @@ function IndexHeader({knowMore}) {
           </div>
           <h6 className="category category-absolute">
             
-            <a style={{color:"white"}}      
+            <a style={{color:"white" , cursor:"pointer"}}      
                     onClick={(e) => {
                     e.preventDefault();
                     document

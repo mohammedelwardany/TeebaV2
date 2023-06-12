@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./style.css"
 // reactstrap components
 import {
   Button,
@@ -54,7 +55,7 @@ function IndexNavbar() {
       ) : null}
       <Navbar className={"fixed-top " + navbarColor} expand="lg" style={{backgroundColor:"#000"}}>
         <Container>
-          <div className="navbar-translate">
+          <div className="navbar-translate" >
             <NavbarBrand
               href=""
               target="_blank"
@@ -78,14 +79,14 @@ function IndexNavbar() {
             </button>
           </div>
           <Collapse
-            className="justify-content-end"
+            className="justify-content-end collapse-color"
             isOpen={collapseOpen}
             navbar
-    
+    // color="#fff"
             style={{backgroundColor:"#000"}}
           >
-            <Nav navbar>
-
+            <Nav navbar className="collapse-color">
+<br/>
               {/* <UncontrolledDropdown nav>
                 <DropdownToggle
                   caret

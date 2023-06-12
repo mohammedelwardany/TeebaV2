@@ -63,6 +63,19 @@ function Index() {
 
 <ContactUs/>
 
+{/* 
+contact us form 
+contact us inforamation footer
+logo teba footer
+icons to black
+colors to black
+linked in in footer
+
+  */}
+
+
+
+
           
         </div>
         <DarkFooter />

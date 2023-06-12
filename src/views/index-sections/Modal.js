@@ -46,6 +46,7 @@ const ModalC = ({ModalButton,Modaltitle,ModalImageSrc,ModalParagraph,ModalbtnV,M
                     className="close"
                     type="button"
                     onClick={() => setModal1(false)}
+                    style={{color:"#000"}}
                   >
                     <i className="now-ui-icons ui-1_simple-remove"></i>
                   </button>
@@ -73,7 +74,8 @@ const ModalC = ({ModalButton,Modaltitle,ModalImageSrc,ModalParagraph,ModalbtnV,M
                     
                   </div>
                   <Button
-                    color="danger"
+                    color="dark"
+                    style={{backgroundColor:"#000"}}
                     type="button"
                     onClick={() => setModal1(false)}
                   >

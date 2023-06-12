@@ -1,0 +1,15 @@
+.flexColWidth{
+    flex-direction: row;
+}
+.w-50{
+    width: 50% !important;
+}
+@media screen and (max-width: 991px) {
+    .flexColWidth{
+        flex-direction: column;
+    }
+    .w-50{
+        width: 100% !important;
+    }
+  }
+
