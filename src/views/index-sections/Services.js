@@ -35,12 +35,12 @@ function Services() {
                     src={require("assets/img/services/AppSecurity.png")}
                   ></img>
 
-                  <h4 className="title">App Security</h4>
+                  <h4 className="title">Digital Strategy</h4>
                   <ModalC
                     ModalButton={"Know More"}
-                    Modaltitle={"App Security"}
+                    Modaltitle={"Digital Strategy"}
                     ModalParagraph={
-                      "Offering app security services guarantees the privacy of user data in businesses. We apply app security solutions that protect against common attacks. Following the best secure coding practices lead to security vulnerability discovery and mitigation. "
+                      "We collaborate closely with our clients to develop comprehensive digital strategies aligned with their business objectives. Our strategies encompass market analysis, customer insights, technology roadmaps, and implementation plans to guide organizations through their digital transformation journey."
                     }
                     ModalImageSrc={require("assets/img/services/AppSecurity.png")}
                     // imageeeee={<ImageService1 style={{maxWidth:200,marginBlock:"5vh"}}/>}
@@ -57,12 +57,12 @@ function Services() {
                     src={require("assets/img/services/Assessmentservices.png")}
                   ></img>
 
-                  <h4 className="title">Assessment Services</h4>
+                  <h4 className="title">Agile Software Development</h4>
                   <ModalC
                     ModalButton={"Know More"}
-                    Modaltitle={"Assessment Services"}
+                    Modaltitle={"Agile Software Development"}
                     ModalParagraph={
-                      "Assisting business leaders in becoming more confident about security comes from identifying risks and mitigating them. We continuously assess businesses' security, leading to steady development that becomes part of each environment."
+                      "We offer end-to-end software development services using agile methodologies, ensuring rapid and iterative delivery of high-quality digital solutions. Our expertise spans custom software development, web and mobile applications, enterprise systems integration, and more."
                     }
                     ModalImageSrc={require("assets/img/services/Assessmentservices.png")}
                     // imageeeee={<ImageService1 style={{maxWidth:200,marginBlock:"5vh"}}/>}
@@ -80,12 +80,12 @@ function Services() {
                     className="rounded-circle img-fluid img-raised"
                     src={require("assets/img/services/CloudSecurity.png")}
                   ></img>
-                  <h4 className="title">Cloud Security</h4>
+                  <h4 className="title">Cloud Solutions</h4>
                   <ModalC
                     ModalButton={"Know More"}
-                    Modaltitle={"Cloud Security"}
+                    Modaltitle={"Cloud Solutions"}
                     ModalParagraph={
-                      "Safeguarding sensitive data stored in the cloud is a major role that Teeba succeeds in managing to ensure data security. We deliver flexible cloud security solutions that can scale and adapt to the changing needs of businesses."
+                      "We assist businesses in migrating to cloud platforms, leveraging the power of scalable infrastructure, and enabling cost optimization. Our cloud services include strategy development, cloud architecture design, migration planning, and ongoing cloud management and support."
                     }
                     ModalImageSrc={require("assets/img/services/CloudSecurity.png")}
                     ModalBtnV={"none"}
@@ -106,12 +106,12 @@ function Services() {
                     src={require("assets/img/services/DeviceSecurity.png")}
                   ></img>
 
-                  <h4 className="title">Device Security</h4>
+                  <h4 className="title">Data Analytics and AI</h4>
                   <ModalC
                     ModalButton={"Know More"}
-                    Modaltitle={"Device Security"}
+                    Modaltitle={"Data Analytics and AI"}
                     ModalParagraph={
-                      "Teeba helps businesses keep their devices safe against viruses, ransomware, spyware, and adware, diminishing the risk of data loss. By implementing encryption, strong authentication methods, and secure storage, data is protected from unauthorized access, data breaches, and theft. "
+                      "We help organizations harness the power of data by implementing advanced analytics and artificial intelligence (AI) solutions. Our services include data strategy, data governance, predictive analytics, machine learning, and data visualization to enable data-driven decision-making."
                     }
                     ModalImageSrc={require("assets/img/services/DeviceSecurity.png")}
                     // imageeeee={<ImageService1 style={{maxWidth:200,marginBlock:"5vh"}}/>}
@@ -128,12 +128,12 @@ function Services() {
                     src={require("assets/img/services/ManagedSecurityServices.png")}
                   ></img>
 
-                  <h4 className="title">Managed Security Services</h4>
+                  <h4 className="title">User Experience (UX) Design</h4>
                   <ModalC
                     ModalButton={"Know More"}
-                    Modaltitle={"Managed Security Services"}
+                    Modaltitle={"User Experience (UX) Design"}
                     ModalParagraph={
-                      "MSS (Managed Security Services) We are in charge of managing, enhancing, and monitoring businesses' security posture while utilizing their resources, knowledge, and technology. Our specialists examine security events, enabling quick identification and action against security lapses or anomalies."
+                      "We prioritize creating intuitive and engaging user experiences to enhance customer satisfaction and drive user adoption. Our UX design services encompass user research, prototyping, wireframing, and usability testing to deliver user-centric digital products and services."
                     }
                     ModalImageSrc={require("assets/img/services/ManagedSecurityServices.png")}
                     // imageeeee={<ImageService1 style={{maxWidth:200,marginBlock:"5vh"}}/>}
@@ -151,12 +151,12 @@ function Services() {
                     className="rounded-circle img-fluid img-raised"
                     src={require("assets/img/services/NetworkSecurity.png")}
                   ></img>
-                  <h4 className="title">Network Security</h4>
+                  <h4 className="title">Cybersecurity</h4>
                   <ModalC
                     ModalButton={"Know More"}
-                    Modaltitle={"Network Security"}
+                    Modaltitle={"Cybersecurity"}
                     ModalParagraph={
-                      "We provide email filtering, antivirus software, and intrusion detection and prevention systems (IDS/IPS). This aids companies in identifying and thwarting rogue software, viruses, and other activities. Access restrictions, secure protocols, and encryption are implemented to protect sensitive data sent via business networks."
+                      "We prioritize the security of digital assets and sensitive data, providing comprehensive cyber security solutions. Our services include vulnerability assessments, penetration testing, security audits, incident response, and security awareness training to safeguard organizations from evolving cyber threats."
                     }
                     ModalImageSrc={require("assets/img/services/NetworkSecurity.png")}
                     ModalBtnV={"none"}

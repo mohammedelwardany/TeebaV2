@@ -52,12 +52,12 @@ function Index() {
          <Services/> 
 
 
-         <Carousel />
+         {/* <Carousel /> */}
 {/* <Products/> */}
 
 
-        <Specefecations/>
-<Refrences/>
+        {/* <Specefecations/> */}
+{/* <Refrences/> */}
 
 <NucleoIcons />
 

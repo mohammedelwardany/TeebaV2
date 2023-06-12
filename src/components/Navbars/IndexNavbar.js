@@ -52,7 +52,7 @@ function IndexNavbar() {
           }}
         />
       ) : null}
-      <Navbar className={"fixed-top " + navbarColor} expand="lg" style={{backgroundColor:"#5d9a24"}}>
+      <Navbar className={"fixed-top " + navbarColor} expand="lg" style={{backgroundColor:"#000"}}>
         <Container>
           <div className="navbar-translate">
             <NavbarBrand
@@ -81,10 +81,12 @@ function IndexNavbar() {
             className="justify-content-end"
             isOpen={collapseOpen}
             navbar
+    
+            style={{backgroundColor:"#000"}}
           >
             <Nav navbar>
 
-              <UncontrolledDropdown nav>
+              {/* <UncontrolledDropdown nav>
                 <DropdownToggle
                   caret
                   color="default"
@@ -92,7 +94,6 @@ function IndexNavbar() {
                   nav
                   onClick={(e) => e.preventDefault()}
                 >
-                  {/* <i className="now-ui-icons design_app mr-1"></i> */}
                   <p>services</p>
                 </DropdownToggle>
                 <DropdownMenu>
@@ -127,103 +128,11 @@ function IndexNavbar() {
                     Training for the users
                   </DropdownItem>
 
-                  {/* <DropdownItem
-                    href="https://demos.creative-tim.com/now-ui-kit-react/#/documentation/introduction?ref=nukr-index-navbar"
-                    target="_blank"
-                  >
-                    <i className="now-ui-icons design_bullet-list-67 mr-1"></i>
-                    Documentation
-                  </DropdownItem> */}
+           
                 </DropdownMenu>
-              </UncontrolledDropdown>
-              <UncontrolledDropdown nav>
-                <DropdownToggle
-                  caret
-                  color="default"
-                  href="#pablo"
-                  nav
-                  onClick={(e) => e.preventDefault()}
-                >
-                  {/* <i className="now-ui-icons design_app mr-1"></i> */}
-                  <p>products</p>
-                </DropdownToggle>
-                <DropdownMenu>
-                  <DropdownItem to=""
-                    onClick={(e) => {
-                      e.preventDefault();
-                      document
-                        .getElementById("carousel")
-                        .scrollIntoView();
-                    }}
+              </UncontrolledDropdown> */}
 
-                    tag={Link}>
-                    Inventory Management
-                  </DropdownItem>
-                  <DropdownItem to=""
-                    onClick={(e) => {
-                      e.preventDefault();
-                      document
-                        .getElementById("carousel")
-                        .scrollIntoView();
-                    }}
-                    tag={Link}>
-                    Sales & Customer Orders
-                  </DropdownItem>
-                  <DropdownItem to=""
-                    onClick={(e) => {
-                      e.preventDefault();
-                      document
-                        .getElementById("carousel")
-                        .scrollIntoView();
-                    }} tag={Link}>
-                    Purchasing
-                  </DropdownItem>
-                  <DropdownItem to=""
-                    onClick={(e) => {
-                      e.preventDefault();
-                      document
-                        .getElementById("carousel")
-                        .scrollIntoView();
-                    }} tag={Link}>
-                    General Ledger
-                  </DropdownItem>
-                  <DropdownItem to=""
-                    onClick={(e) => {
-                      e.preventDefault();
-                      document
-                        .getElementById("carousel")
-                        .scrollIntoView();
-                    }} tag={Link}>
-                    Accounts Payable
-                  </DropdownItem>
-                  <DropdownItem to=""
-                    onClick={(e) => {
-                      e.preventDefault();
-                      document
-                        .getElementById("carousel")
-                        .scrollIntoView();
-                    }} tag={Link}>
-                    Accounts Receivable
-                  </DropdownItem>
-                  <DropdownItem to=""
-                    onClick={(e) => {
-                      e.preventDefault();
-                      document
-                        .getElementById("carousel")
-                        .scrollIntoView();
-                    }} tag={Link}>
-                    Payroll
-                  </DropdownItem>
-                  {/* <DropdownItem
-                    href="https://demos.creative-tim.com/now-ui-kit-react/#/documentation/introduction?ref=nukr-index-navbar"
-                    target="_blank"
-                  >
-                    <i className="now-ui-icons design_bullet-list-67 mr-1"></i>
-                    Documentation
-                  </DropdownItem> */}
-                </DropdownMenu>
-              </UncontrolledDropdown>
-              <NavItem>
+              {/* <NavItem>
                 <NavLink
                   href="#pablo"
                   onClick={(e) => {
@@ -233,22 +142,20 @@ function IndexNavbar() {
                       .scrollIntoView();
                   }}
                 >
-                  {/* <i className="now-ui-icons arrows-1_cloud-download-93"></i> */}
                   <p>specefecation</p>
                 </NavLink>
-              </NavItem>
+              </NavItem> */}
               <NavItem>
                 <NavLink
-                  href="#specefecations"
+                  href="#services"
                   onClick={(e) => {
                     e.preventDefault();
                     document
-                      .getElementById("specefecations")
+                      .getElementById("services")
                       .scrollIntoView();
                   }}
                 >
-                  {/* <i className="now-ui-icons arrows-1_cloud-download-93"></i> */}
-                  <p>Refrences</p>
+                  <p>services</p>
                 </NavLink>
               </NavItem>
               <NavItem>
@@ -268,7 +175,7 @@ function IndexNavbar() {
               <NavItem>
                 <Button
                   className="nav-link btn-neutral"
-                  style={{backgroundColor:"#fff",color:"#5d9a23"}}
+                  style={{backgroundColor:"#fff",color:"#000"}}
                   color="info"
                   href=""
                   id="upgrade-to-pro"
@@ -286,43 +193,18 @@ function IndexNavbar() {
               </NavItem>
               <NavItem>
                 <NavLink
-                  href="#"
+                  href="https://www.linkedin.com/company/teeba-digital-transformation"
                   target="_blank"
                   id="twitter-tooltip"
                 >
-                  <i className="fab fa-twitter"></i>
-                  <p className="d-lg-none d-xl-none">Twitter</p>
+                  <i className="fab fa-linkedin"></i>
+                  <p className="d-lg-none d-xl-none">linkedin</p>
                 </NavLink>
                 <UncontrolledTooltip target="#twitter-tooltip">
-                  Follow us on Twitter
+                  Follow us on linkedin
                 </UncontrolledTooltip>
               </NavItem>
-              <NavItem>
-                <NavLink
-                  href="#"
-                  target="_blank"
-                  id="facebook-tooltip"
-                >
-                  <i className="fab fa-facebook-square"></i>
-                  <p className="d-lg-none d-xl-none">Facebook</p>
-                </NavLink>
-                <UncontrolledTooltip target="#facebook-tooltip">
-                  Like us on Facebook
-                </UncontrolledTooltip>
-              </NavItem>
-              <NavItem>
-                <NavLink
-                  href="#"
-                  target="_blank"
-                  id="instagram-tooltip"
-                >
-                  <i className="fab fa-instagram"></i>
-                  <p className="d-lg-none d-xl-none">Instagram</p>
-                </NavLink>
-                <UncontrolledTooltip target="#instagram-tooltip">
-                  Follow us on Instagram
-                </UncontrolledTooltip>
-              </NavItem>
+             
             </Nav>
           </Collapse>
         </Container>
@@ -332,3 +214,89 @@ function IndexNavbar() {
 }
 
 export default IndexNavbar;
+
+
+
+
+
+
+// <UncontrolledDropdown nav>
+// <DropdownToggle
+//   caret
+//   color="default"
+//   href="#pablo"
+//   nav
+//   onClick={(e) => e.preventDefault()}
+// >
+//   <p>products</p>
+// </DropdownToggle>
+// <DropdownMenu>
+//   <DropdownItem to=""
+//     onClick={(e) => {
+//       e.preventDefault();
+//       document
+//         .getElementById("carousel")
+//         .scrollIntoView();
+//     }}
+
+//     tag={Link}>
+//     Inventory Management
+//   </DropdownItem>
+//   <DropdownItem to=""
+//     onClick={(e) => {
+//       e.preventDefault();
+//       document
+//         .getElementById("carousel")
+//         .scrollIntoView();
+//     }}
+//     tag={Link}>
+//     Sales & Customer Orders
+//   </DropdownItem>
+//   <DropdownItem to=""
+//     onClick={(e) => {
+//       e.preventDefault();
+//       document
+//         .getElementById("carousel")
+//         .scrollIntoView();
+//     }} tag={Link}>
+//     Purchasing
+//   </DropdownItem>
+//   <DropdownItem to=""
+//     onClick={(e) => {
+//       e.preventDefault();
+//       document
+//         .getElementById("carousel")
+//         .scrollIntoView();
+//     }} tag={Link}>
+//     General Ledger
+//   </DropdownItem>
+//   <DropdownItem to=""
+//     onClick={(e) => {
+//       e.preventDefault();
+//       document
+//         .getElementById("carousel")
+//         .scrollIntoView();
+//     }} tag={Link}>
+//     Accounts Payable
+//   </DropdownItem>
+//   <DropdownItem to=""
+//     onClick={(e) => {
+//       e.preventDefault();
+//       document
+//         .getElementById("carousel")
+//         .scrollIntoView();
+//     }} tag={Link}>
+//     Accounts Receivable
+//   </DropdownItem>
+//   <DropdownItem to=""
+//     onClick={(e) => {
+//       e.preventDefault();
+//       document
+//         .getElementById("carousel")
+//         .scrollIntoView();
+//     }} tag={Link}>
+//     Payroll
+//   </DropdownItem>
+
+// </DropdownMenu>
+// </UncontrolledDropdown>

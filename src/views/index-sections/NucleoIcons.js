@@ -12,24 +12,24 @@ function NucleoIcons() {
         <Container>
           <Row>
             <Col lg="6" md="12">
-              <h2 className="title" style={{color:"#993314"}}>About Us</h2>
+              <h2 className="title" style={{color:"#000"}}>About Us</h2>
               <h5 className="description">
-              Teeba Data Systems Co was established in Egypt in 1991 as SOFTWARE HOUSE
-              </h5>
-              <h5 className="description">
-              Providing integrated products, excellent services, good technical support and business solutions for some of the most prestigious organizations in Egypt.
-              </h5>
+              Teeba Digital Transformation is a reputable and experienced company with a proven track record of 25 years in the field of digital transformation. We specialize in helping organizations embrace digital technologies and leverage them to drive innovation, enhance operational efficiency, and achieve sustainable growth.              </h5>
+              {/* <h5 className="description">
+              </h5> */}
               <ModalC
           ModalButton={"Know More"}
           Modaltitle={"About Us"}
           ModalParagraph={<>
-            Teeba Data Systems is managed by an experienced management and supported by a technical team with long unique experience in :
-            <ul>
+  {/* Teeba Digital Transformation is a reputable and experienced company with a proven track record of 25 years in the field of digital transformation. We specialize in helping organizations embrace digital technologies and leverage them to drive innovation, enhance operational efficiency, and achieve sustainable growth. */}
+
+Our mission is to empower businesses across industries to navigate the ever-evolving digital landscape and thrive in the digital age. With a team of seasoned professionals and a deep understanding of emerging technologies, we deliver tailored solutions that enable our clients to stay ahead of the competition and capitalize on new opportunities.
+            {/* <ul>
               <li>Many business segments</li>
               <li>Management , technical support and software development , using project</li>
             </ul>
             management that leads to timely implementation with the advice of experienced consultants for implementing, tailoring and streamlining systems to clients' specific needs. Teeba Data Systems objective to develop, customize and implement the customer's turnkey solutions to automate its existing operation and the future needs.
-          
+           */}
           </>}
           ModalImageSrc={require("../../assets/img/51442342.png")}
           ModalbtnV={"none"}

@@ -24,7 +24,7 @@ const ModalC = ({ModalButton,Modaltitle,ModalImageSrc,ModalParagraph,ModalbtnV,M
         color="info"
         className="mr-1"
         onClick={() => setModal1(true)}
-        style={{display:ModalbtnV,backgroundColor:"#5d9a24"}}
+        style={{display:ModalbtnV,backgroundColor:"#000"}}
       >
         {ModalButton}
       </Button>
@@ -34,7 +34,7 @@ const ModalC = ({ModalButton,Modaltitle,ModalImageSrc,ModalParagraph,ModalbtnV,M
                 color="info"
                 size="lg"
                 target="_blank"
-                style={{display:ModalBtnV,backgroundColor:"#993314"}}
+                style={{display:ModalBtnV,backgroundColor:"#000"}}
                 onClick={() => setModal1(true)}
               >
                 {ModalButton}
