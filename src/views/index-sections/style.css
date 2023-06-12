@@ -6,7 +6,9 @@
 .displayblockmd{
     display: none !important;
 }
+.title-center-md{
 
+}
 @media screen and (max-width: 991px) {
     .displaynonemd {
         display: none !important;
@@ -18,6 +20,9 @@
 
     .displayblockmd{
         display: block !important;
+    }
+    .title-center-md{
+        text-align: center !important;
     }
 }
 

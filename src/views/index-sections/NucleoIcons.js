@@ -11,7 +11,7 @@ function NucleoIcons() {
     <>
       <div className="section section-nucleo-icons" id="aboutUs">
         <Container>
-              <h2 className="title" style={{color:"#000"}}>About Us</h2>
+              <h2 className="title title-center-md" style={{color:"#000"}}>About Us</h2>
           <Row>
             <Col lg="6" md="24">
               <h5 className="description" style={{color:"#000",fontWeight:"normal"}}>
