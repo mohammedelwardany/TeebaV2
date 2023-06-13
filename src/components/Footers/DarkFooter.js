@@ -1,6 +1,9 @@
 import React from "react";
 import "./style.css"
 import { Container } from "reactstrap";
+import {
+  NavLink,
+} from "reactstrap";
 
 function DarkFooter() {
   return (
@@ -10,9 +13,11 @@ function DarkFooter() {
         <div style={{display:"flex" , flexDirection:"column" , justifyContent:"space-between" }} className="w-50">
         <div className="m-2">
     
-<p style={{fontWeight:"normal"}}>
+<p className="FooterText">
         Follow our LinkedIn profile for the latest updates, industry insights, and thought leadership articles on digital transformation and emerging technologies. Join Teeba Digital Transformation in shaping the future of digital innovation.
 </p>
+
+
         </div>
   
         </div>

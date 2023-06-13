@@ -4,12 +4,22 @@
 .w-50{
     width: 50% !important;
 }
+
+.FooterText{
+    font-size: 105%;
+    font-weight: normal;
+}
 @media screen and (max-width: 991px) {
     .flexColWidth{
         flex-direction: column;
     }
     .w-50{
         width: 100% !important;
+    }
+
+    .FooterText{
+        font-size: 100%;
+        font-weight: normal;
     }
   }
 
