@@ -22,8 +22,6 @@ const ContactUs = () =>{
  <div className="section section-contact-us text-center" id="ContactUs">
 <Container>
   <h2 className="title" style={{color:"#000"}}>Contact us</h2>
-  <p className="description contactUs" >Follow our LinkedIn profile for the latest updates, industry insights, and thought leadership articles on digital transformation and emerging technologies. Join Teeba Digital Transformation in shaping the future of digital innovation.</p>
-  <br/> <br/>
   {/* <p className="description" style={{fontWeight:"normal",color:"#000",textAlign:"start"}}>
   Teeba Digital Transformation <br/>
 9 AL Nozha street , Nasr City , Cairo , Egypt <br/>
