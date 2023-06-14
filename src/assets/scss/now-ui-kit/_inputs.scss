@@ -50,8 +50,8 @@
     }
 
     .has-danger &{
-        border-color: lighten($danger-color, 30%);
-        color: $danger-color;
+        border-color: lighten(#000, 30%);
+        color:#000;
         background-color: rgba(222,222,222, .1);
 
         &:focus{
@@ -103,7 +103,7 @@
 .has-danger{
     &:after{
         content: "\ea53";
-        color: $danger-color;
+        color: #000;
     }
 }
 
@@ -150,7 +150,7 @@
 
 .has-error{
     .form-control-feedback, .control-label{
-        color: $danger-color;
+        color: #000;
     }
 }
 .has-success{
@@ -174,10 +174,10 @@
 
     .has-success &,
     .has-danger &{
-        background-color: $white-color;
+        background-color: #000;
     }
     .has-danger .form-control:focus + &{
-        color: $danger-color;
+        color: #000 !important;
     }
     .has-success .form-control:focus + &{
         color: $success-color;
@@ -221,10 +221,10 @@
 
   &.input-group-focus {
     .input-group-prepend .input-group-text {
-      border-left: 1px solid #f96332;
+      border-left: 1px solid #000;
     }
     .input-group-append .input-group-text {
-      border-right: 1px solid #f96332;
+      border-right: 1px solid #000;
     }
     &.no-border{
       .input-group-prepend .input-group-text{

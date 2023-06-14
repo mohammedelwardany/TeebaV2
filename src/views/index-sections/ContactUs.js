@@ -18,6 +18,30 @@ const ContactUs = () =>{
     const [EmailFocus, setEmailFocus] = React.useState(false);
     const [PhoneFocus, setPhoneFocus] = React.useState(false);
     const [JobTitele, setJobTitele] = React.useState(false);
+    const [JobTitleText, setJobTitleText] = React.useState("");
+    const [nameText, setnameText] = React.useState("");
+    const [phoneText, setphoneText] = React.useState("");
+    const [EmailText, setEmailText] = React.useState("");
+    const [message, setMessage] = React.useState("");
+
+    const handleSubmit = () => {
+      // const { First_name, Last_name, Email, Message } = values;
+      // console.log({
+      //   name: nameText,
+      //   email: EmailText,
+      //   phone: phoneText,
+      //   message: message,
+      //   jop: JobTitleText
+      // });
+      // Construct the mailto link with form values
+      const mailtoLink = `mailto:info@teebasystems.com.eg?subject=Contact Form Submission&body=First Name:${JobTitleText} ${nameText}%0D%0AEmail: ${EmailText} %0D%0APhone: ${phoneText}%0D%0AMessage: ${message}`;
+  
+      // Open the user's email client with the mailto link
+      window.location.href = mailtoLink;
+    };
+
+
+
     return(
  <div className="section section-contact-us text-center" id="ContactUs">
 <Container>
@@ -48,14 +72,16 @@ Email: info@teebasystems.com.eg<br/>
           type="text"
           onFocus={() => setJobTitele(true)}
           onBlur={() => setJobTitele(false)}
+          onChange={(e)=>{setJobTitleText(e.target.value)}}
         ></Input>
       </InputGroup>
       <InputGroup
         className={
-          "input-lg" + (NameFocus ? " input-group-focus" : "")
+          "input-lg focusing" + (NameFocus ? " input-group-focus" : "")
         }
+        style={{borderColor:"#000 !important"}}
       >
-        <InputGroupAddon addonType="prepend">
+        <InputGroupAddon addonType="prepend" className="focusing" style={{borderColor:"black"}}>
           <InputGroupText>
             <i className="now-ui-icons users_circle-08"></i>
           </InputGroupText>
@@ -65,14 +91,16 @@ Email: info@teebasystems.com.eg<br/>
           type="text"
           onFocus={() => setNameFocus(true)}
           onBlur={() => setNameFocus(false)}
+          onChange={(e)=>{setnameText(e.target.value)}}
         ></Input>
       </InputGroup>
       <InputGroup
+
         className={
-          "input-lg" + (EmailFocus ? " input-group-focus" : "")
+          "input-lg focusing" + (EmailFocus ? " input-group-focus focusing" : "")
         }
       >
-        <InputGroupAddon addonType="prepend">
+        <InputGroupAddon addonType="prepend" className="focusing">
           <InputGroupText>
             <i className="now-ui-icons ui-1_email-85"></i>
           </InputGroupText>
@@ -82,12 +110,14 @@ Email: info@teebasystems.com.eg<br/>
           type="text"
           onFocus={() => setEmailFocus(true)}
           onBlur={() => setEmailFocus(false)}
+          onChange={(e)=>{setEmailText(e.target.value)}}
         ></Input>
       </InputGroup>
       <InputGroup
         className={
           "input-lg" + (PhoneFocus ? " input-group-focus" : "")
         }
+        style={{borderColor:"#000"}}
       >
         <InputGroupAddon addonType="prepend">
           <InputGroupText>
@@ -99,6 +129,7 @@ Email: info@teebasystems.com.eg<br/>
           type="text"
           onFocus={() => setPhoneFocus(true)}
           onBlur={() => setPhoneFocus(false)}
+          onChange={(e)=>{setphoneText(e.target.value)}}
         ></Input>
       </InputGroup>
       <div className="textarea-container">
@@ -108,6 +139,7 @@ Email: info@teebasystems.com.eg<br/>
           placeholder="Type a message..."
           rows="4"
           type="textarea"
+          onChange={(e)=>{setMessage(e.target.value)}}
         ></Input>
       </div>
       <div className="send-button">
@@ -119,6 +151,7 @@ Email: info@teebasystems.com.eg<br/>
           href="#pablo"
           onClick={(e) => e.preventDefault()}
           size="lg"
+          onClickCapture={handleSubmit}
         >
           Send Message
         </Button>
