@@ -1,3 +1,11 @@
+
+.contactUs{
+    
+    font-weight: normal;
+    color: #000;
+    text-align: start;
+}
+
 .displaynonemd {
     display: block !important;
 }
@@ -13,6 +21,13 @@
     .displaynonemd {
         display: none !important;
     }
+    .contactUs{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+}
+    
+
 
     .fontTitles {
         font-size: 1vh;

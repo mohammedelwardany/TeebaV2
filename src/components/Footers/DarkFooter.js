@@ -16,7 +16,17 @@ function DarkFooter() {
 <p className="FooterText">
         Follow our LinkedIn profile for the latest updates, industry insights, and thought leadership articles on digital transformation and emerging technologies. Join Teeba Digital Transformation in shaping the future of digital innovation.
 </p>
+<a
+        href="https://www.linkedin.com/company/teeba-digital-transformation"
+        target="_blank"
+         id="twitter-tooltip"
+         style={{textDecoration:"none"}}
+          >
+          <i className="fab fa-linkedin"></i>&nbsp; &nbsp; &nbsp; Teeba Digital Transformation
 
+                </a>
+
+                
 
         </div>
   
