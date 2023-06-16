@@ -50,7 +50,7 @@ function DarkFooter() {
         </div>
         <div className="m-2">
         <i class="now-ui-icons tech_mobile"></i>
-        &nbsp; &nbsp; &nbsp; <span>+ (202) 4142191</span>
+        &nbsp; &nbsp; &nbsp; <span>(+20) 24142191</span>
         </div>
         </div>
 
